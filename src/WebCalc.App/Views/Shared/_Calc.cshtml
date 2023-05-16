@@ -1,0 +1,151 @@
+@using System.Globalization
+
+@{
+    var decimalSeparator = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
+}
+
+<div class="mb-2">
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('x')">
+        x
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('(')">
+        (
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable(')')">
+        )
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('+')">
+        +
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('mod')">
+        %
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary" style="width: 149px;"
+            onclick="addSyllable('sqrt(')">
+        Sqrt
+    </button>
+</div>
+<div class="mb-2">
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('7')">
+        7
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('8')">
+        8
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('9')">
+        9
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('-')">
+        -
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('e')">
+        e
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary me-1"
+            onclick="addSyllable('cos(')">
+        Cos
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary"
+            onclick="addSyllable('acos(')">
+        Acos
+    </button>
+</div>
+<div class="mb-2">
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('4')">
+        4
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('5')">
+        5
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('6')">
+        6
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('*')">
+        *
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-action me-1"
+            onclick="calculate()">
+        =
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary me-1"
+            onclick="addSyllable('sin(')">
+        Sin
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary"
+            onclick="addSyllable('asin(')">
+        Asin
+    </button>
+</div>
+<div class="mb-2">
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('1')">
+        1
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('2')">
+        2
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('3')">
+        3
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('/')">
+        /
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-action me-1"
+            onclick="subtractSyllable()">
+        C
+    </button>
+
+    <button type="button" class="button button-fnc btn btn-lg btn-primary me-1"
+            onclick="addSyllable('tan(')">
+        Tan
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary"
+            onclick="addSyllable('atan(')">
+        Atan
+    </button>
+</div>
+<div class="mb-2">
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1" style="width: 129px"
+            onclick="addSyllable('0')">
+        0
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-numpad me-1"
+            onclick="addSyllable('@decimalSeparator')">
+        @decimalSeparator
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-op me-1"
+            onclick="addSyllable('^')">
+        ^
+    </button>
+    <button type="button" class="button btn btn-lg btn-primary button-action me-1"
+            onclick="clearExpression()">
+        CA
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary me-1"
+            onclick="addSyllable('ln(')">
+        Ln
+    </button>
+    <button type="button" class="button button-fnc btn btn-lg btn-primary"
+            onclick="addSyllable('log(')">
+        Log
+    </button>
+</div>
+
+<script src="~/js/calc.js"></script>

@@ -1,0 +1,26 @@
+@{
+    ViewBag.Title = "Plot";
+}
+
+<div class="container">
+    <div class="input-group mb-3">
+        <span class="input-group-text">Expression</span>
+        <input class="form-control" type="text" id="expression" onchange="redraw()" value="sin(x)"/>
+    </div>
+    <div class="input-group">
+        <span class="input-group-text">X Min</span>
+        <input class="form-control" type="text" id="xMin" onchange="redraw()" value="-5"/>
+        <span class="input-group-text">X Max</span>
+        <input class="form-control" type="text" id="xMax" onchange="redraw()" value="5"/>
+        <div class="vr ms-4 me-4"></div>
+        <span class="input-group-text">Y Min</span>
+        <input class="form-control" type="text" id="yMin" onchange="redraw()" value="-5"/>
+        <span class="input-group-text">Y Max</span>
+        <input class="form-control" type="text" id="yMax" onchange="redraw()" value="5"/>
+    </div>
+
+    <canvas class="mt-5" id="plot"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="~/js/plot.js"></script>

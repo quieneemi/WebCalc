@@ -1,0 +1,33 @@
+.expression {
+    text-align: right;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.button {
+    width: 60px;
+    border-color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.button-numpad {
+    background-color: #d0e4fe;
+    color: #394355;
+}
+
+.button-op {
+    background-color: #abcefb;
+    color: #394355;
+}
+
+.button-action {
+    background-color: #5e89c6;
+    color: white;
+}
+
+.button-fnc {
+    width: 70px;
+    height: 47px;
+    font-size: medium;
+    background-color: #abcefb;
+    color: #658ec7;
+}

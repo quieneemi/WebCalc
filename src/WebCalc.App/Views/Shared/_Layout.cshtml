@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/calc.css"/>
+    <link rel="stylesheet" href="~/WebCalc.App.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <nav class="container navbar navbar-expand navbar-light bg-white border box-shadow mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SmartCalc</a>
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Home" asp-action="History" class="nav-link text-dark">History</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Home" asp-action="Plot" class="nav-link text-dark">Plot</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-area="" asp-controller="Home" asp-action="HelpTopics" class="nav-link text-dark">Help</a>
+                </li>
+            </ul>
+            <p class="ms-auto text-muted navbar-nav">&copy; 2023, cgreenbe</p>
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="pb-3" style="margin-left: 3%; margin-right: 3%">
+    @RenderBody()
+</main>
+
+<script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

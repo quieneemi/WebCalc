@@ -1,0 +1,14 @@
+@{
+    ViewBag.Title = "Smart Calc";
+}
+
+<div class="container" style="width: 515px;">
+    <div class="hstack mb-3">
+        <span class="input-group-text me-1">X</span>
+        <input class="form-control" type="text" id="xValue" value="1" style="width: 70px;"/>
+        <div class="vr ms-2 me-2"></div>
+        <input class="form-control expression" type="text" id="expression" placeholder="0" value="@ViewBag.Expression"/>
+    </div>
+
+    <partial name="_Calc"/>
+</div>

@@ -1,0 +1,16 @@
+@{
+    ViewBag.Title = "History";
+}
+
+<div class="container list-group" style="width: 515px;">
+    <a type="button" class="btn btn-outline-danger mb-2" asp-action="ClearHistory">
+        Clear
+    </a>
+    @foreach (CalcOperation item in ViewBag.History)
+    {
+        <a type="button" class="list-group-item list-group-item-action" style="font-family: 'Brush Script MT', cursive;"
+           asp-action="Index" asp-route-expression="@item.Expression">
+            @($"{item.Expression} = {item.Result}")
+        </a>
+    }
+</div>
