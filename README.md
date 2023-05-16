@@ -11,6 +11,7 @@ Calculations core written using c++ and imported as dynamic library
 
 ## Libraries & Frameworks
 - ASP.NET Core MVC
+- Chart.js
 - Bootstrap
 
 ## Math Calculator
